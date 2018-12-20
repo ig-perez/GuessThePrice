@@ -24,9 +24,9 @@ configuration: # This is the configuration section, you can define your locale o
 - one: please tell us your name # In the right part we have the expected result
 - jordi: # If we want to test several items within the response we do it like this ...
   - prompt: "let's start the game: jordi your product is Fitbit Charge 2 HR* Guess the price"
-  - response.card.title: Fitbit Charge 2 HR
+  - response.card.title: "Your product is: Fitbit Charge 2 HR"
   - response.card.image.largeImageUrl: "https://images-na.ssl-images-amazon.com/images/I/51NC9OeIr7L._SL1080_.jpg"
-  - response.card.text: A wristband worn health tracker and heart rate monitor, Fitbit Charge 2 HR helps you maximize your workout, better track calorie burn, get a snapshot of your cardio fitness and track  your sleep.
+  - response.card.text: "Your product description is: A wristband worn health tracker and heart rate monitor, Fitbit Charge 2 HR helps you maximize your workout, better track calorie burn, get a snapshot of your cardio fitness and track  your sleep."
 - 240: You said 240 , the actual price was 149 dollars. Your score for that answer is 0 points. Your next product is * Guess the price
 - stop: Goodbye! # A typical YAML sentence is composed by 2 parts separated by a colon
 

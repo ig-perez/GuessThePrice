@@ -146,7 +146,12 @@ const setupUsersHandlers = Alexa.CreateStateHandler(states.SETUP_USERS, Object.a
             this.attributes["currentProduct"] = productChoice;
             this.attributes["currentRound"] = 0;
 
-            this.emit(':askWithCard', productEmision, productEmision, productChoice.name, productChoice.description, imageObj);
+            this.emit(':askWithCard',
+                productEmision,
+                productEmision,
+                "Your product is: " + productChoice.name,
+                "Your product description is: " + productChoice.description,
+                imageObj);
         } else {
             this.attributes["currentPlayerSetup"] = currentPlayer + 1;
 
@@ -235,7 +240,12 @@ const evaluateUserResponse = function (alexaContext) {
 
     const repromt = alexaContext.t("GUESS_THE_PRICE_REPROMT") + productChoice.name;
 
-    alexaContext.emit(':askWithCard', speechOutput, repromt, productChoice.name, productChoice.description, imageObj);
+    alexaContext.emit(':askWithCard',
+        speechOutput,
+        repromt,
+        "Your product is: " + productChoice.name,
+        "Your product description is: " + productChoice.description,
+        imageObj);
 };
 
 const gameRoundHandlers = Alexa.CreateStateHandler(states.GAME_ROUND, Object.assign({

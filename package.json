@@ -6,7 +6,7 @@
   "dependencies": {
     "alexa-sdk": "^1.0.25",
     "alexa-verifier": "^1.0.0",
-    "bespoken-tools": "2.0.5",
+    "bespoken-tools": "^2.1.9",
     "dotenv": "^4.0.0"
   },
   "nyc": {
@@ -27,17 +27,15 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "chai": "^4.1.2",
     "codecov": "^3.0.2",
-    "mocha": "^3.5.3",
     "nyc": "^11.9.0",
     "virtual-alexa": "^0.6.5",
-    "virtual-device-sdk": "^1.4.9"
+    "virtual-device-sdk": "^1.5.3"
   },
   "scripts": {
     "integration": "npm run build:js && bst test test",
     "pretest": "npm run build:js",
-    "test": "bst test test",
+    "test": "bst test",
     "posttest": "nyc report --reporter=json && codecov -f coverage/*.json",
     "build": "npm run build:init && npm run build:js && npm run build:install",
     "build:init": "rm -rf dist && mkdir dist",

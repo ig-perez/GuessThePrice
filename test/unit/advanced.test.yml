@@ -42,9 +42,9 @@ configuration:
   - response.shouldEndSession: false
   - response.reprompt.outputSpeech.ssml: "/.*let's start the game: jordi your product is .* guess the price.*/i"
   - response.card.type: Standard # Accessing the card object
-  - response.card.title: Fitbit Charge 2 HR
+  - response.card.title: "Your product is: Fitbit Charge 2 HR"
   - response.card.image.largeImageUrl: "https://images-na.ssl-images-amazon.com/images/I/51NC9OeIr7L._SL1080_.jpg"
-  - response.card.text: A wristband worn health tracker and heart rate monitor, Fitbit Charge 2 HR helps you maximize your workout, better track calorie burn, get a snapshot of your cardio fitness and track  your sleep.
+  - response.card.text: "Your product description is: A wristband worn health tracker and heart rate monitor, Fitbit Charge 2 HR helps you maximize your workout, better track calorie burn, get a snapshot of your cardio fitness and track  your sleep."
   - sessionAttributes.playerQuantity: 1
   - sessionAttributes.currentPlayerSetup: 0
   - sessionAttributes.STATE: _GAME_ROUND
