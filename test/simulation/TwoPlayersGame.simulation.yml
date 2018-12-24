@@ -1,0 +1,33 @@
+
+#=====================================================================================================================
+#     ______    _ ____  ______        __  _
+#    / __/ /__ (_) / / /_  __/__ ___ / /_(_)__  ___ _
+#   _\ \/  '_// / / /   / / / -_|_-</ __/ / _ \/ _ `/
+#  /___/_/\_\/_/_/_/   /_/  \__/___/\__/_/_//_/\_, /
+#                                             /___/
+#
+# Created by Bespoken
+# Learn more at https://read.bespoken.io/end-to-end/getting-started/
+# >>> If you need assistance please chat with us here: https://apps.bespoken.io/dashboard (lower right-hand corner)
+#
+# Skill name: "Guess the Price by" Bespoken
+# Test scope: Simple end-to-end test script using the simulation feature by Amazon
+# Description: General test suite
+#=====================================================================================================================
+
+---
+configuration: # This is the configuration section, you can define your locale or the mocks here
+  locale: en-US
+  virtualDeviceToken: alexa-cafd63c7-13d3-40f5-9d56-6d817d7ba663
+  type: simulation
+  skillId: amzn1.ask.skill.612ef5f8-697a-43ab-ac3c-2523a0617b7b
+
+---
+- test: Invoke skill, play once with two players and cancel.
+- open guess the price: how many persons are playing today
+- two: contestant one please tell us, what is your name
+- jordi: Contestant 2 please tell us, what is your name
+- caterina: "let's start the game: Jordi your product is * Guess the price" # Quotes because there is a colon in the right part
+- one hundred and forty nine: you said 149 , the actual price was * dollars. Your score for that answer is * points. Now is Caterina turn
+- forty three: Now is Jordi turn. Your next product is
+- cancel: Goodbye!
