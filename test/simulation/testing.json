@@ -1,0 +1,7 @@
+{
+  "trace": false,
+  "jest": {
+    "silent": false,
+    "testMatch": ["**/test/*.yml", "**/tests/*.yml", "**/*.e2e.yml", "**/*.simulation.yml", "**/*.spec.yml"]
+  }
+}
