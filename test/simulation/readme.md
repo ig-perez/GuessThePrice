@@ -36,7 +36,6 @@ Each test script contains the token for each locale and other important paramete
 ---
 configuration:
  locale: en-US
- virtualDeviceToken: alexa-cafd63c7-13d3-40f5-9d56-6d817d7ba663
  type: simulation
  skillId: amzn1.ask.skill.612ef5f8-697a-43ab-ac3c-2523a0617b7b
 ```
