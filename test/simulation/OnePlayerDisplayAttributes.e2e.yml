@@ -28,7 +28,6 @@ configuration: # This is the configuration section, you can define your locale o
 - jordi:
   - prompt: "let's start the game: Jordi your product is * Guess the price"
   - cardTitle: Your product is
-  - cardContent: Your product description is
   - cardImageURL: "https://images-na.ssl-images-amazon.com"
 - two hundred and forty: You said 240 , the actual price was * dollars. Your score for that answer is * points. Your next product is * Guess the price
 - stop: Goodbye! # A typical YAML sentence is composed by 2 parts separated by a colon

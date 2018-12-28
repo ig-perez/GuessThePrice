@@ -13,8 +13,6 @@ This sample project shows how to configure your working environment to do end-to
 * Deploy your skill (code and interaction model)
 * Enable it for testing via the [Alexa Developer Console](https://developer.amazon.com/docs/devconsole/test-your-skill.html#test-simulator)
 * Get the SkillID of the voice app you want to test
-* Install Python 2.7. You can get it [here](https://www.python.org/downloads/release/python-2715/)
-* Create the PYTHON environment variable using the path where you installed Python 2.7. For Windows users, you would also need to update your `Path` environment variable by adding the path where you just installed Python 2.7.
 * Install or update Bespoken CLI to its latest version. Run `$ npm install -g bespoken-tools`
 * [Setup a Virtual Device Token](https://read.bespoken.io/end-to-end/setup/) with Bespoken
 
